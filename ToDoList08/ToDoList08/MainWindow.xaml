@@ -1,0 +1,25 @@
+﻿<Window x:Class="ToDoList08.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ToDoList08"
+        mc:Ignorable="d"
+        Title="ToDoList" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="okButton" Content="Přidat" HorizontalAlignment="Left" Margin="232,244,0,0" VerticalAlignment="Top" Width="89" Click="Button_Click"/>
+        <Label Content="Co chceš vykonat?" HorizontalAlignment="Left" Margin="10,54,0,0" VerticalAlignment="Top" Width="140" Height="30"/>
+        <Label Content="Do kdy?" HorizontalAlignment="Left" Margin="10,214,0,0" VerticalAlignment="Top" Width="140" Height="30"/>
+        <TextBox x:Name="cinnostTextBox" HorizontalAlignment="Left" Height="22" Margin="150,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="171"/>
+        <Label Content="Podrobnější informace:" HorizontalAlignment="Left" Margin="10,84,0,0" VerticalAlignment="Top" Width="140" Height="30"/>
+        <TextBox x:Name="infoTextBox" HorizontalAlignment="Left" Height="91" Margin="10,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="311"/>
+        <ListBox x:Name="seznamListBox" HorizontalAlignment="Left" Height="268" Margin="355,54,0,0" VerticalAlignment="Top" Width="262"/>
+        <Button x:Name="odstranitButton" Content="Odstranit" HorizontalAlignment="Left" Margin="542,327,0,0" VerticalAlignment="Top" Width="75" Click="OdstranitButton_Click"/>
+        <Button x:Name="upravitButton" Content="Upravit" HorizontalAlignment="Left" Margin="462,327,0,0" VerticalAlignment="Top" Width="75" Click="UpravitButton_Click"/>
+        <DatePicker x:Name="datumDatePicker" HorizontalAlignment="Left" Margin="150,215,0,0" VerticalAlignment="Top" Width="171"/>
+        <Button x:Name="infoButton" Content="Informace" HorizontalAlignment="Left" Margin="382,327,0,0" VerticalAlignment="Top" Width="75" Click="InfoButton_Click"/>
+        <Button x:Name="ulozitButton" Content="Uložit" HorizontalAlignment="Left" Margin="650,87,0,0" VerticalAlignment="Top" Width="114" Click="UlozitButton_Click"/>
+        <Button x:Name="nacistButton" Content="Načíst" HorizontalAlignment="Left" Margin="650,119,0,0" VerticalAlignment="Top" Width="114" Click="NacistButton_Click"/>
+
+    </Grid>
+</Window>
